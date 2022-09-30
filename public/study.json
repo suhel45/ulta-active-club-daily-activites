@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Study",
+    "time": "2",
+    "img": "https://static9.depositphotos.com/1518767/1120/i/950/depositphotos_11201868-stock-photo-student-focused-on-his-homework.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Coding",
+    "time": "5",
+    "img": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Playing football",
+    "time": "1",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVbGYfcCUF3pL8vhH7gLGIpE_3r64wO85ZsA&usqp=CAU.jgp"
+  },
+  {
+    "id": "4",
+    "name": "Namaz",
+    "time": "1",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tvyUMEwTJZMUwIsw6A4lvXdaBjxr_K9_3Q&usqp=CAU.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Watching Tv",
+    "time": "2",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyp4mfG1Z-72DMzMdTUtTRR6LcVJhb_lAjnQ&usqp=CAU.jpg"
+  },
+  {
+    "id": "6",
+    "name": "sleep",
+    "time": "6",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqviPM2YEjplEW6i7TIBwep8_qTVRPl41G2Q&usqp=CAU.jpg"
+  }
+]
