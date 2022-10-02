@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import logo from '../../logo.svg'
 const List = (props) => {
+    let TotalTime = 0;
+    for(const time of props.list){
+        TotalTime = TotalTime + parseFloat(time.time);
+    }
     return (
         <div>
         <div className="person-info">
