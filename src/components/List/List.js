@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../logo.svg'
+import logo from '../../suhel.jpg'
 const List = (props) => {
     let TotalTime = 0;
     for(const time of props.list){
@@ -13,7 +13,7 @@ const List = (props) => {
     return (
         <div>
         <div className="person-info">
-     <img src={logo} alt="" />
+     <img className='rounded-circle' src={logo} alt="" />
      <p>md suhel</p>
  </div>
  <div className='person-details'>
