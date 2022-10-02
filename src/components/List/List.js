@@ -22,9 +22,9 @@ const List = (props) => {
      <h3>Add Break</h3>
      <div className='btn'>
          <button onClick={() =>addBreakTime(10)} className='rounded-circle bg-white border-0 py-1'>10s</button>
-         <button className='rounded-circle bg-white border-0 py-1'>20s</button>
-         <button className='rounded-circle bg-white border-0 py-1'>30s</button>
-         <button className='rounded-circle bg-white border-0 py-1'>40s</button>
+         <button onClick={() =>addBreakTime(20)} className='rounded-circle bg-white border-0 py-1'>20s</button>
+         <button onClick={() =>addBreakTime(30)} className='rounded-circle bg-white border-0 py-1'>30s</button>
+         <button onClick={() =>addBreakTime(40)} className='rounded-circle bg-white border-0 py-1'>40s</button>
      </div>
      <div>
          <h4>Study details</h4>
