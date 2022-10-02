@@ -1,11 +1,14 @@
+import { useState } from 'react';
 import logo from '../../logo.svg'
 const List = (props) => {
     let TotalTime = 0;
     for(const time of props.list){
         TotalTime = TotalTime + parseFloat(time.time);
     }
-    const addBreakTime = (breakTime) =>{
-        console.log(breakTime)
+    const [breakTime,setBreakTime] = useState(0);
+
+    const addBreakTime = (storeTime) =>{
+       setBreakTime(storeTime);
     }
     return (
         <div>
@@ -33,7 +36,7 @@ const List = (props) => {
          <h5>Study Time:{TotalTime}</h5>
      </div>
      <div className='break-time'>
-     <h5>Break Time:{}</h5>
+     <h5>Break Time:{breakTime}s</h5>
      </div>
  </div>
  <button className=' btn-primary px-3 py-2'>Activity Completed</button>
