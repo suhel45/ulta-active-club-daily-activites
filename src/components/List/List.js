@@ -28,7 +28,7 @@ const List = (props) => {
          <h4>Study details</h4>
      </div>
      <div className='study-time'>
-         <h5>Study Time:{}</h5>
+         <h5>Study Time:{TotalTime}</h5>
      </div>
      <div className='break-time'>
      <h5>Break Time:{}</h5>
