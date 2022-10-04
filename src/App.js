@@ -2,6 +2,7 @@ import './App.css';
 import Study from './components/studys/Study';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Question from './components/question/Question';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           Daily Routine Activities</h3>
       </div>
       <Study></Study>
+      <Question></Question>
     </div>
   );
 }

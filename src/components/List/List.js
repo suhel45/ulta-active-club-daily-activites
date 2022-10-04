@@ -10,7 +10,6 @@ const List = (props) => {
     const [breakTime,setBreakTime] = useState(0);
     const addBreakTime = (storeTime) =>{
          let cart = {time:storeTime};
-         console.log(cart)
            localStorage.setItem("cart",JSON.stringify(cart));
        setBreakTime(storeTime);
     }
