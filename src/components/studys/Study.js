@@ -20,8 +20,8 @@ const Study = () => {
 
     }
     return (
-        <div className='shop-container'>
-    <div className="products-container">
+        <div className='study-container'>
+    <div className="activity-container">
         {
             study.map(activity => <Activity
                  activity={activity} 
@@ -30,7 +30,7 @@ const Study = () => {
                  ></Activity>)
         }
     </div>
-    <div className="cart-container">
+    <div className="list-container">
         <List
         list={list}
         ></List>

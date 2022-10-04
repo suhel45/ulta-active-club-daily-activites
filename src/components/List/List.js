@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import logo from '../../suhel.jpg'
 import './List.css'
+import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 const List = (props) => {
     const [tim,setTim] = useState(0);
     let TotalTime = 0;
@@ -17,6 +19,11 @@ const List = (props) => {
         const a = JSON.parse(localStorage.getItem("cart"));
          setTim(a);
     },[breakTime])
+    const completeBtn = () =>{
+        toast.success("Successfully Completed",{
+            position:"top-center"
+        });
+    }
     return (
         <div className="list-container">
         <div className="person-info">
@@ -46,9 +53,11 @@ const List = (props) => {
      <h5>Break Time:{tim?tim.time:0}s</h5>
      </div>
  </div>
- <button className=' btn-primary px-3 py-2'>Activity Completed</button>
+ <button onClick={() =>completeBtn()} className=' btn-primary px-3 py-2'>Activity Completed</button>
+       <ToastContainer/>
         </div>
     );
+    
 };
 
 export default List;
