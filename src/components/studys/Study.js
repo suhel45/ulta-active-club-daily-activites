@@ -12,9 +12,12 @@ const Study = () => {
         .then(res => res.json())
         .then( data => setStudy(data))
     },[])
+    
     const handleAddToList = (activity) =>{
         const newList = [...list,activity];
         setList(newList);
+        // console.log(activity
+
     }
     return (
         <div className='shop-container'>

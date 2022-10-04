@@ -8,7 +8,7 @@ const activity = (props) => {
              <div className="card ">
              <img className='card-img-top img-fluid' src={img} alt="" />
              <h3>{name}</h3>
-             <p>Time Required: {time}</p>
+             <p>Time Required: {time}hr</p>
              <button onClick={() =>handleAddToList(props.activity)} className=' btn-primary'>Add lists</button>
             </div>
         </div>

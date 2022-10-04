@@ -1,20 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from '../../suhel.jpg'
+import './List.css'
 const List = (props) => {
+    const [tim,setTim] = useState(0);
     let TotalTime = 0;
     for(const time of props.list){
         TotalTime = TotalTime + parseFloat(time.time);
     }
     const [breakTime,setBreakTime] = useState(0);
-
     const addBreakTime = (storeTime) =>{
+         let cart = {time:storeTime};
+         console.log(cart)
+           localStorage.setItem("cart",JSON.stringify(cart));
        setBreakTime(storeTime);
     }
+    useEffect(() =>{
+        const a = JSON.parse(localStorage.getItem("cart"));
+         setTim(a);
+    },[breakTime])
     return (
-        <div>
+        <div className="list-container">
         <div className="person-info">
      <img className='rounded-circle' src={logo} alt="" />
-     <p>md suhel</p>
+     <p className='name'>md suhel</p>
  </div>
  <div className='person-details'>
      <p>50kg weight</p>
@@ -33,10 +41,10 @@ const List = (props) => {
          <h4>Study details</h4>
      </div>
      <div className='study-time'>
-         <h5>Study Time:{TotalTime}</h5>
+         <h5>Study Time:{TotalTime}hr</h5>
      </div>
      <div className='break-time'>
-     <h5>Break Time:{breakTime}s</h5>
+     <h5>Break Time:{tim?tim.time:0}s</h5>
      </div>
  </div>
  <button className=' btn-primary px-3 py-2'>Activity Completed</button>

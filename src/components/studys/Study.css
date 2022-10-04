@@ -1,4 +1,5 @@
 .shop-container{
+    position: relative;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
@@ -13,8 +14,10 @@
     align-items: center;
 }
 .person-info img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .person-details{
     display: flex;
