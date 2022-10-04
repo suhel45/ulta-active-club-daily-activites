@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import activity from '../activity/Activity';
 import Activity from '../activity/Activity';
@@ -8,9 +9,14 @@ const Study = () => {
     let [study,setStudy] = useState([]);
     const [list,setList] = useState([]);
     useEffect(() =>{
-        fetch("study.json")
-        .then(res => res.json())
-        .then( data => setStudy(data))
+        const fectData  = async() =>{
+           const {data} = await axios.get("study.json")
+           console.log(data)
+           setStudy(data);
+
+        }
+        fectData();
+        
     },[])
     
     const handleAddToList = (activity) =>{
